@@ -113,4 +113,5 @@ void idwt2_haar(float* data, uint32_t width, uint32_t height) {
     }
 }
 
+
 } // namespace wm
