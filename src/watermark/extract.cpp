@@ -1,1 +1,0 @@
-// extract.cpp - implementation placeholder

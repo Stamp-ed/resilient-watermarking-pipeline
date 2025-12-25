@@ -13,7 +13,7 @@ static inline float alpha(int k) {
 // -------------------------
 // Forward DCT
 // -------------------------
-void dct8x8(const float* input, float* output) {
+void    dct8x8(const float* input, float* output) {
     for (int u = 0; u < 8; ++u) {
         for (int v = 0; v < 8; ++v) {
             float sum = 0.0f;

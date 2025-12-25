@@ -1,7 +1,7 @@
 #include <cassert>
 #include <cstdio>
 #include <cstring>
-
+#include <cmath>
 #include "wm/image.h"
 #include "wm/types.h"
 #include "wm/errors.h"
