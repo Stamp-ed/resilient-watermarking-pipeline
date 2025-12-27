@@ -1,0 +1,7 @@
+.\embed_text.exe d:\PhotoProof\WatermarkingLibrary\watermark-core\test_exe\second.bmp second_embed.bmp  "Nawabbbb" 0xABCD1234 30   
+
+.\extract_text.exe d:\PhotoProof\WatermarkingLibrary\watermark-core\test_exe\second_newss.bmp  0xABCD1234     
+
+g++ -std=c++17 -O3 -Iinclude .\tests\extract_text.cpp -L. -lwatermark -o extract_text.exe
+
+g++ -std=c++17 -O3 -Iinclude./tests/embed_text.cpp -L. -lwatermark -o embed_text.exe     

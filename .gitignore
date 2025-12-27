@@ -47,12 +47,11 @@ ehthumbs.db
 *.a
 *.lib
 *.so
-*.dll
 *.dylib
-*.exe
 *.out
 *.app
 
+# Removed .exe and .dll
 # Coverage and profiling
 coverage/
 *.gcda
