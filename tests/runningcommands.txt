@@ -5,3 +5,20 @@
 g++ -std=c++17 -O3 -Iinclude .\tests\extract_text.cpp -L. -lwatermark -o extract_text.exe
 
 g++ -std=c++17 -O3 -Iinclude./tests/embed_text.cpp -L. -lwatermark -o embed_text.exe     
+
+
+PS D:\PhotoProof\WatermarkingLibrary\watermark-core\tests> g++ -std=c++17 -O3 -shared `           
+>>   -Iinclude `
+>>   src/api.cpp `
+>>   src/image.cpp `
+>>   src/transform/dwt.cpp `
+>>   src/transform/subband.cpp `
+>>   src/transform/dct.cpp `
+>>   src/transform/dct_mask.cpp `
+>>   src/preprocess/normalize.cpp `
+>>   src/watermark/embed_image.cpp `
+>>   src/watermark/extract_image.cpp `
+>>   src/watermark/block_permutation.cpp `
+>>   src/watermark/embed_block.cpp `
+>>   src/watermark/extract_block.cpp `
+>>   -o watermark.dll

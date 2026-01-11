@@ -11,5 +11,5 @@ const DCTIndex DCT_MID_FREQ_MASK[DCT_MASK_SIZE] = {
     {2, 3},
     {3, 2}
 };
-
+    
 } // namespace wm

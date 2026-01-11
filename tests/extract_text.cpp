@@ -6,6 +6,7 @@
 #include <cstring>
 
 #include "wm/api.h"
+#include "wm/preprocess/normalize.h"
 
 #pragma pack(push, 1)
 struct BMPHeader
@@ -194,6 +195,7 @@ int main(int argc, char **argv)
         printf("Image too small for fixed payload (%u bits)\n", PAYLOAD_BITS);
         return 1;
     }
+    wm::normalize_luminance_blocks(padded_Y.data(), pw, ph, 32);
 
     // Extract
     std::vector<int8_t> bits(PAYLOAD_BITS);
